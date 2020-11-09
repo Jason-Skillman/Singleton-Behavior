@@ -1,0 +1,11 @@
+{
+  "name": "com.jasonskillman.singleton",
+  "displayName": "Singleton",
+  "version": "1.0.0",
+  "description": "Easily transform your MonoBehavior classes into singletons.",
+  "author": {
+    "name": "Jason Skillman",
+    "email": "jason_skillman@outlook.com",
+    "url": "https://github.com/Jason-Skillman"
+  }
+}
