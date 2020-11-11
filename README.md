@@ -34,7 +34,7 @@ GameManager.Instance.MyMethod();
 ```C#
 protected override void Awake() {
 	base.Awake()
-
-    //Your code here...
+	
+	//Your code here...
 }
 ```
