@@ -23,13 +23,13 @@ To easily create a singleton have your script extend `SingletonBehavior<T>` wher
 public class GameManager : SingletonBehavior<GameManager> {
 ```
 
-Every `SingletonBehavior` will have a static `Instance` property to access your singlton from anywhere. You will have access to all public variables, properties and methods of that class.
+Every `SingletonBehavior` will have a static `Instance` property to access your singleton from anywhere. You will have access to all public variables, properties, and methods of that class.
 
 ```C#
 GameManager.Instance.MyMethod();
 ```
 
-`SingletonBehavior` uses the `MonoBehavior` `Awake()` Unity message to create the instance so you will have to override and call it's base to properly use the Awake method in your script.
+`SingletonBehavior` uses the `MonoBehavior` `Awake()` Unity message to create the instance so you will have to override and call its base to properly use the Awake method in your script.
 
 ```C#
 protected override void Awake() {
