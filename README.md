@@ -1,4 +1,4 @@
-# Unity-Singleton
+# Singleton-Behavior
 Easily transform your MonoBehavior classes into singletons.
 
 ## How to install
@@ -10,7 +10,7 @@ Open up the package manager `Window/Package Manager` and click on `Add package f
 
 Paste in this repository's url.
 
-`https://github.com/Jason-Skillman/Unity-Singleton.git`
+`https://github.com/Jason-Skillman/Singleton-Behavior.git`
 
 ![unity_package_manager_git_with_url](Documentation~/images/unity_package_manager_git_with_url.png)
 

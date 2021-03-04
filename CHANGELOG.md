@@ -1,4 +1,7 @@
-# Unity Singleton Changelog
+# Singleton Behavior Changelog
+
+## [1.1.1] - 03/04/2021
+- Updated package name to `SingletonBehavior`.
 
 ## [1.1.0] - 12/20/2020
 - Updated `SingltonBehavior` script to be auto created if one does not exist.
