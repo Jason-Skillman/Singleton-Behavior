@@ -25,6 +25,13 @@ If you are using Unity 2019.2 or lower than you will not be able to install the 
 
 ---
 
+### Git submodule
+Alternatively you can also install this package as a git submodule.
+
+```console
+$ git submodule add https://github.com/Jason-Skillman/Singleton-Behavior.git Packages/Singleton-Behavior
+```
+
 ## Singleton behavior
 To easily create a singleton have your script extend `SingletonBehavior<T>` where `T` will be the name of the class.
 
