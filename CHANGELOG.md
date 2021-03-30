@@ -1,5 +1,9 @@
 # Singleton Behavior Changelog
 
+## [1.2.0] - 03/30/2021
+- Fixed singleton when using multible game objects from the start.
+- Add `dontDestroyOnLoad` to the inspector.
+
 ## [1.1.1] - 03/04/2021
 - Updated package name to `SingletonBehavior`.
 

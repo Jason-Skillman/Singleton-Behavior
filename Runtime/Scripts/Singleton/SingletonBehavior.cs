@@ -4,8 +4,9 @@ namespace Singleton {
 	public class SingletonBehavior<T> : MonoBehaviour where T : MonoBehaviour {
 
 		private static T instance;
-		
-		//Todo: Add bool member
+
+		[SerializeField]
+		private bool dontDestroyOnLoad = default;
 
 		public static T Instance {
 			get {
@@ -25,14 +26,12 @@ namespace Singleton {
 			if(instance == null) {
 				instance = FindObjectOfType<T>();
 			} else {
-				Debug.Log("Removing duplicate: " + gameObject.name);
 				Destroy(gameObject);
 				return;
 			}
 
-			//DontDestroyOnLoad(gameObject);
-			
-			//instance = GetComponent<T>();
+			if(dontDestroyOnLoad)
+				DontDestroyOnLoad(gameObject);
 		}
 
 	}	
