@@ -2,20 +2,23 @@
 
 namespace Singleton {
 	public class SingletonBehavior<T> : MonoBehaviour where T : MonoBehaviour {
+		
+		[SerializeField]
+		private bool dontDestroyOnLoad = default;
+		
+		private static bool isQuitting;
 
 		private static T instance;
 
-		[SerializeField]
-		private bool dontDestroyOnLoad = default;
-
 		public static T Instance {
 			get {
+				if(isQuitting) return null;
 				if(instance == null) {
 					//Create a new T GameObject if one does not exist
 					if(instance == null) {
-						GameObject emptyGameObject = new GameObject();
-						emptyGameObject.name = typeof(T).ToString();
-						instance = emptyGameObject.AddComponent<T>();
+						GameObject emptyObject = new GameObject();
+						emptyObject.name = typeof(T).ToString();
+						instance = emptyObject.AddComponent<T>();
 					}
 				}
 				return instance;
@@ -32,6 +35,10 @@ namespace Singleton {
 
 			if(dontDestroyOnLoad)
 				DontDestroyOnLoad(gameObject);
+		}
+
+		protected virtual void OnApplicationQuit() {
+			isQuitting = true;
 		}
 
 	}	
