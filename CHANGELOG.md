@@ -1,5 +1,8 @@
 # Singleton Behavior Changelog
 
+## [1.2.1] - 04/01/2021
+- Fixed a bug where a new object would get created OnApplicationQuit.
+
 ## [1.2.0] - 03/30/2021
 - Fixed singleton when using multible game objects from the start.
 - Add `dontDestroyOnLoad` to the inspector.

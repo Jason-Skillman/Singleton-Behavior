@@ -1,7 +1,7 @@
 {
   "name": "com.jasonskillman.singleton",
   "displayName": "Singleton Behavior",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Easily transform your MonoBehavior classes into singletons.",
   "author": {
     "name": "Jason Skillman",
