@@ -13,14 +13,14 @@ namespace Singleton {
 		public static T Instance {
 			get {
 				if(isQuitting) return null;
+
+				//Create a new T GameObject if one does not exist
 				if(instance == null) {
-					//Create a new T GameObject if one does not exist
-					if(instance == null) {
-						GameObject emptyObject = new GameObject();
-						emptyObject.name = typeof(T).ToString();
-						instance = emptyObject.AddComponent<T>();
-					}
+					GameObject emptyObject = new GameObject();
+					emptyObject.name = typeof(T).ToString();
+					instance = emptyObject.AddComponent<T>();
 				}
+				
 				return instance;
 			}
 		}

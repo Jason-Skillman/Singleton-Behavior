@@ -1,5 +1,8 @@
 # Singleton Behavior Changelog
 
+## [1.2.2] - 05/23/2021
+- Removed duplicate null checking.
+
 ## [1.2.1] - 04/01/2021
 - Fixed a bug where a new object would get created OnApplicationQuit.
 
