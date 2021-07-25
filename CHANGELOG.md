@@ -1,5 +1,8 @@
 # Singleton Behavior Changelog
 
+## [1.2.3] - 07/24/2021
+- Updated assembly definition names.
+
 ## [1.2.2] - 05/23/2021
 - Removed duplicate null checking.
 
