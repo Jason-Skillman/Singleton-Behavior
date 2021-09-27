@@ -1,5 +1,8 @@
 # Singleton Behavior Changelog
 
+## [1.3.0] - 09/27/2021
+- Split singleton scripts.
+
 ## [1.2.3] - 07/24/2021
 - Updated assembly definition names.
 
