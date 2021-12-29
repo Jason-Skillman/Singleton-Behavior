@@ -1,3 +1,3 @@
 namespace Singleton {
-	public class Persistant : SingletonBehavior<Persistant> {}
+	public class Persistant : SingletonBehaviorPersistant<Persistant> {}
 }

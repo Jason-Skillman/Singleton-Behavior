@@ -1,5 +1,8 @@
 # Singleton Behavior Changelog
 
+## [1.4.0] - 12/29/2021
+- Split `DontDestroyOnLoad()` logic from singleton script.
+
 ## [1.3.0] - 09/27/2021
 - Split singleton scripts.
 
