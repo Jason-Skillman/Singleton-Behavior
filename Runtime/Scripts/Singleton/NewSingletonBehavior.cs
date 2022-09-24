@@ -5,14 +5,11 @@
 	/// Instantiates a new GameObject with script of type <see cref="T"/> if one does not exist yet.
 	/// Similar to <see cref="SingletonBehavior{T}"/>.
 	/// </summary>
-	public class NewSingletonBehavior<T> : MonoBehaviour where T : MonoBehaviour {
+	public class NewSingletonBehavior<T> : MonoBehaviour where T : Component {
 		
-		[SerializeField]
-		private bool dontDestroyOnLoad = default;
+		private static T instance;
 		
 		private static bool isQuitting;
-
-		private static T instance;
 
 		public static T Instance {
 			get {
@@ -35,9 +32,6 @@
 				Destroy(gameObject);
 				return;
 			}
-
-			if(dontDestroyOnLoad)
-				DontDestroyOnLoad(gameObject);
 		}
 
 		protected virtual void OnApplicationQuit() {
