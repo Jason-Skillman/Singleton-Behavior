@@ -1,5 +1,11 @@
 # Singleton Behavior Changelog
 
+## [2.0.0] - 09/24/2022
+- Removed unsused scripts.
+- Removed `DontDestroyOnLoad()` from classes.
+- Added `DontDestroyOnLoad.cs`.
+- Updated `SingltonBehavior` to use `Component` instead of `MonoBehavior`.
+
 ## [1.4.0] - 12/29/2021
 - Split `DontDestroyOnLoad()` logic from singleton script.
 
