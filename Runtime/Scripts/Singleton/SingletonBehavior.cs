@@ -1,7 +1,7 @@
 ﻿namespace Singleton {
 	using UnityEngine;
 	
-	public class SingletonBehavior<T> : MonoBehaviour where T : MonoBehaviour {
+	public class SingletonBehavior<T> : MonoBehaviour where T : Component {
 		
 		public static T Instance { get; private set; }
 
@@ -13,5 +13,5 @@
 			
 			Instance = this as T;
 		}
-	}	
+	}
 }
