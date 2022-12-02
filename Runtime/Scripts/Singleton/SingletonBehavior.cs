@@ -1,4 +1,4 @@
-﻿namespace Singleton {
+﻿namespace JasonSkillman.Singleton {
 	using UnityEngine;
 	
 	public class SingletonBehavior<T> : MonoBehaviour where T : Component {
