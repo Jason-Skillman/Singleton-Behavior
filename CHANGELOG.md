@@ -1,5 +1,8 @@
 # Singleton Behavior Changelog
 
+## [2.0.1] - 12/02/2022
+- Updated namespace.
+
 ## [2.0.0] - 09/24/2022
 - Removed unsused scripts.
 - Removed `DontDestroyOnLoad()` from classes.
