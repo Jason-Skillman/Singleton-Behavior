@@ -26,12 +26,12 @@
 		}
 
 		protected virtual void Awake() {
-			if(instance == null)
-				instance = FindObjectOfType<T>();
-			else {
+			if(instance != null) {
 				Destroy(gameObject);
 				return;
 			}
+			
+			DontDestroyOnLoad(gameObject);
 		}
 
 		protected virtual void OnApplicationQuit() {
