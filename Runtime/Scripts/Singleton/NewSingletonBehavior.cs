@@ -17,7 +17,7 @@
 
 				//Create a new T GameObject if one does not exist
 				if(instance == null) {
-					GameObject emptyObject = new GameObject { name = typeof(T).ToString() };
+					GameObject emptyObject = new GameObject { name = typeof(T).Name };
 					instance = emptyObject.AddComponent<T>();
 				}
 				
