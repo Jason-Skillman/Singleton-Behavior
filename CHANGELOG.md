@@ -1,5 +1,8 @@
 # Singleton Behavior Changelog
 
+## [2.0.2] - 12/02/2022
+- Added DDOL to all singletons.
+
 ## [2.0.1] - 12/02/2022
 - Updated namespace.
 
