@@ -1,6 +1,9 @@
 # Singleton Behavior Changelog
 
-## [2.0.2] - 12/02/2022
+## [2.0.3] - 08/30/2024
+- Fixed name of new game object.
+
+## [2.0.2] - 08/30/2024
 - Added DDOL to all singletons.
 
 ## [2.0.1] - 12/02/2022
