@@ -12,6 +12,7 @@
 			}
 			
 			Instance = this as T;
+			DontDestroyOnLoad(gameObject);
 		}
 	}
 }
