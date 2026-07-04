@@ -1,5 +1,5 @@
 {
-    "name": "JasonSkillman.UnitySingletonBehavior",
+    "name": "JasonSkillman.SingletonBehavior",
     "rootNamespace": "JasonSkillman.Singleton",
     "references": [],
     "includePlatforms": [],

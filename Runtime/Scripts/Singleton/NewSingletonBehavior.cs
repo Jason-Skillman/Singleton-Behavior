@@ -1,40 +1,47 @@
-﻿namespace JasonSkillman.Singleton {
-	using UnityEngine;
+﻿using UnityEngine;
 
+namespace JasonSkillman.Singleton
+{
 	/// <summary>
 	/// Instantiates a new GameObject with script of type <see cref="T"/> if one does not exist yet.
 	/// Similar to <see cref="SingletonBehavior{T}"/>.
 	/// </summary>
-	public class NewSingletonBehavior<T> : MonoBehaviour where T : Component {
-		
+	public class NewSingletonBehavior<T> : MonoBehaviour where T : Component
+	{
 		private static T instance;
-		
+
 		private static bool isQuitting;
 
-		public static T Instance {
-			get {
+		public static T Instance
+		{
+			get
+			{
 				if(isQuitting) return null;
 
 				//Create a new T GameObject if one does not exist
-				if(instance == null) {
+				if(instance == null)
+				{
 					GameObject emptyObject = new GameObject { name = typeof(T).Name };
 					instance = emptyObject.AddComponent<T>();
 				}
-				
+
 				return instance;
 			}
 		}
 
-		protected virtual void Awake() {
-			if(instance != null) {
+		protected virtual void Awake()
+		{
+			if(instance != null)
+			{
 				Destroy(gameObject);
 				return;
 			}
-			
+
 			DontDestroyOnLoad(gameObject);
 		}
 
-		protected virtual void OnApplicationQuit() {
+		protected virtual void OnApplicationQuit()
+		{
 			isQuitting = true;
 		}
 	}
