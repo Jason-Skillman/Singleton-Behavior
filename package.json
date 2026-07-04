@@ -1,7 +1,7 @@
 {
-  "name": "com.jasonskillman.unitysingletonbehaviour",
-  "displayName": "Unity Singleton Behavior",
-  "version": "2.0.4",
+  "name": "com.jasonskillman.singletonbehaviour",
+  "displayName": "Singleton Behavior",
+  "version": "2.0.5",
   "description": "Easily transform your MonoBehavior classes into singletons.",
   "author": {
     "name": "Jason Skillman",

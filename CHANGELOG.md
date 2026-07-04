@@ -1,5 +1,8 @@
 # Unity Singleton Behavior Changelog
 
+## [2.0.5] - 2026/07/04
+- Rename to Singleton Behavior.
+
 ## [2.0.4] - 2025/04/30
 - Rename to Unity Singleton Behavior.
 

@@ -1,7 +1,9 @@
-﻿namespace JasonSkillman.Singleton {
-	using UnityEngine;
+﻿using UnityEngine;
 
-	public class DontDestroyOnLoad : MonoBehaviour {
+namespace JasonSkillman.Singleton
+{
+	public class DontDestroyOnLoad : MonoBehaviour
+	{
 		private void Start() => DontDestroyOnLoad(gameObject);
 	}
 }
